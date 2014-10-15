@@ -1,15 +1,35 @@
+header{
 
+position: relative;
+margin: 0 auto;
+display: block;
+width: auto;
+background-color: #1A7EC3;
+width: 100%;
+
+}
 header h1{
 	margin: 0;
 }
 
-header h1 img{
-	width: 100%;
+header h1 img {
+	width: auto;
+	max-height: 70px;
 }
 
 .container{
 	top: -20px;
 	min-height: 510px;
+	max-width: 910px;
+	margin: 0 auto;
+}
+
+.graph{
+transform: rotateX(180deg);
+top: -201px;
+position: relative;
+left: 240px;
+
 }
 .jms-slideshow {
 	position: relative;
@@ -133,11 +153,11 @@ a.jms-link{
 	width: 100%;
 }
 .jms-dots{
-	width: 100%;
 	position: absolute;
+	width: 100%;
 	text-align: center;
 	left: 0px;
-	bottom: -220px;
+	bottom: -120px;
 	z-index: 2000;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -229,6 +249,16 @@ a.jms-link{
 }
 
 footer{
-	position: relative;
-	left: -133px;
+position: relative;
+margin: 0 auto;
+display: block;
+width: auto;
+background-color: #1A7EC3;
+width: 100%;
+bottom: -40px;
+}
+
+footer img{
+	display: block;
+	margin: 0 auto;
 }
