@@ -17,7 +17,6 @@
 		<![endif]-->
 		<!-- jQuery -->
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<script src="http://code.angularjs.org/1.1.5/angular.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.12/d3.js"></script>
 		<!-- jmpress plugin -->
 		<script type="text/javascript" src="js/jmpress.min.js"></script>
@@ -42,61 +41,13 @@
 				margin-top: 40px;
 			}
 
-			body{
-  font-family: "Helvetica Neue"
-}
-
-h2{
-  font-weight: normal;
-  margin: 0;
-}
-.chart{
-  width: 300px;
-  height: 150px;
-  border-radius: 8px;
-  overflow: hidden;
-}
-.chart__header{
-  position: relative;
-  background: #8eba45;
-  color: #fff;
-  padding: 0 5px;
-}
-
-.chart__icon{
-  position: absolute;
-  font-size: 25px;
-  right: 5px;
-  top: 0;
-}
-
-.chart__content{
-  background: #b6e356;
-}
-
-.chart__line{
-  fill: none;
-  stroke: #fff;
-  stroke-width: 2px;
-}
-
-.chart__circle{
-  fill: #fff;
-  radius: 5px;  
-}
 			</style>
 		</noscript>
     </head>
     <body>
-    				<header>
-				<h1><img src="images/bg_header.png"></h1>
-<!-- 				<h2>Adding some 3D to your slideshow</h2>
-				<nav class="codrops-demos">
-					<a class="current-demo" href="index.html">Default</a>
-					<a href="index2.html">Autoplay</a>
-					<a href="index3.html">Different Layout</a>
-				</nav> -->
-			</header>
+		<header>
+			<h1><img src="images/bg_header.png"></h1>
+		</header>
         <div class="container">								
 
 			<section id="jms-slideshow" class="jms-slideshow">
@@ -124,12 +75,6 @@ h2{
 					</div>
 					
 				</div>
-<!-- 				<div class="step" data-color="color-3" data-x="2000" data-z="3000" data-rotate="170">
-					<div class="jms-content">
-<img src="images/MAGNUM_Campaign_Report_Tailify3.png" />
-					</div>
-					
-				</div> -->
 				<div class="step" data-color="color-4" data-x="3000">
 					<div class="jms-content">
 <img src="images/MAGNUM_Campaign_Report_Tailify4.png" />
@@ -187,15 +132,9 @@ h2{
 		
 
 
-	        	<footer>
-					<h1><img src="images/f.png"></h1>
-	<!-- 				<h2>Adding some 3D to your slideshow</h2>
-					<nav class="codrops-demos">
-						<a class="current-demo" href="index.html">Default</a>
-						<a href="index2.html">Autoplay</a>
-						<a href="index3.html">Different Layout</a>
-					</nav> -->
-				</footer>
+    	<footer>
+			<h1><img src="images/f.png"></h1>
+		</footer>
 
 
 
@@ -303,33 +242,6 @@ h2{
 			}
 			updateGraph(l, chart);
 		}, 1500);
-		</script>
-
-		<script>
-
-		window.App = angular.module('App', []);
-
-		App.controller('GpaController', function($scope){
-		  var points = [
-		    {x: 30, y: 50},
-		    {x: 100, y: 80},
-		    {x: 200, y: 40},
-		    {x: 280, y: 30}
-		  ];
-		  
-		  $scope.points = points;
-		  
-		  $scope.linePath = function(){
-		    var pathParts = [], currentPoint, i;
-		    
-		    for (i = 0; i < points.length; i++) {
-		      currentPoint = points[i];
-		      pathParts.push(currentPoint.x + "," + currentPoint.y);
-		    }
-
-		    return "M" + pathParts.join(" L");
-		  };
-		});
 		</script>
     </body>
 </html>
